@@ -9,7 +9,7 @@ import logger from 'redux-logger'
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
-            campsite: Campsites,
+            campsites: Campsites,
             comments: Comments,
             partners: Partners,
             promotions: Promotions
