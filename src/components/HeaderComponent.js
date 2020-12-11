@@ -4,6 +4,7 @@ import {
     Form, FormGroup, Input, Label
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import Spin from 'react-reveal/Spin';
 
 class Header extends Component {
     constructor(props) {
@@ -40,17 +41,21 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <h1>Nucamp</h1>
-                                <h2>a better way to camp</h2>
+                <Spin>
+                    <Jumbotron fluid>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col">
+
+                                    <h1>Nucamp</h1>
+                                    <h2>a better way to camp</h2>
+
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                </Jumbotron>
-
+                    </Jumbotron>
+                </Spin>
 
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
